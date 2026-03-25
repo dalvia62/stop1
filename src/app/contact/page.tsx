@@ -17,8 +17,8 @@ const contactDetails = [
   {
     icon: Phone,
     title: 'Phone',
-    value: '+1-800-000-0000',
-    href: 'tel:+18000000000'
+    value: '+91 9359013644',
+    href: 'tel:+919359013644'
   }
 ];
 
