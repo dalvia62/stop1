@@ -37,9 +37,6 @@ export function Header() {
           <Button asChild className="hidden sm:inline-flex" variant="ghost">
             <Link href="/contact">Contact</Link>
           </Button>
-          <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
-             <Link href="#hero">Generate Letter</Link>
-          </Button>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
