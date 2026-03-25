@@ -11,8 +11,8 @@ const contactDetails = [
   {
     icon: Mail,
     title: 'Email',
-    value: 'support@stopanddesist.com',
-    href: 'mailto:support@stopanddesist.com'
+    value: 'stopanddesist@gmail.com',
+    href: 'mailto:stopanddesist@gmail.com'
   },
   {
     icon: Phone,
