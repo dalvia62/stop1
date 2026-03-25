@@ -75,7 +75,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section id="hero" className="container grid place-items-center py-20 md:py-32">
+      <section id="hero" className="container mx-auto px-4 grid place-items-center py-20 md:py-32">
         <div className="text-center max-w-3xl">
           <h1 className="text-4xl font-bold tracking-tighter md:text-6xl text-primary">
             Stop Debt Collector Harassment Instantly
@@ -101,7 +101,7 @@ export default function Home() {
 
       {/* How It Works Section */}
       <section id="how-it-works" className="bg-card border-y">
-        <div className="container py-20">
+        <div className="container mx-auto px-4 py-20">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold tracking-tight">How It Works</h2>
             <p className="mt-4 text-muted-foreground">A simple, three-step process to regain your peace of mind.</p>
@@ -123,7 +123,7 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section id="benefits" className="container py-20">
+      <section id="benefits" className="container mx-auto px-4 py-20">
         <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold tracking-tight">Key Benefits</h2>
             <p className="mt-4 text-muted-foreground">Empower yourself with the right tools to manage financial communication effectively.</p>
@@ -149,7 +149,7 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <section id="testimonials" className="bg-card border-y">
-        <div className="container py-20">
+        <div className="container mx-auto px-4 py-20">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold tracking-tight">Trusted by Users</h2>
             <p className="mt-4 text-muted-foreground">See what others have to say about their experience.</p>
@@ -186,7 +186,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="container py-20">
+      <section id="faq" className="container mx-auto px-4 py-20">
         <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold tracking-tight">Frequently Asked Questions</h2>
             <p className="mt-4 text-muted-foreground">Find answers to common questions about our service.</p>
@@ -204,7 +204,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section id="generate" className="container">
+      <section id="generate" className="container mx-auto px-4">
         <div className="bg-primary text-primary-foreground rounded-lg p-10 md:p-16 text-center">
             <h2 className="text-3xl font-extrabold tracking-tight">Take Control of Your Financial Communication Today</h2>
             <div className="mt-8 flex justify-center">
