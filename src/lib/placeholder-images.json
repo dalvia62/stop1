@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "testimonial-sarah-j",
+      "description": "Avatar for Sarah J.",
+      "imageUrl": "https://picsum.photos/seed/101/100/100",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-michael-b",
+      "description": "Avatar for Michael B.",
+      "imageUrl": "https://picsum.photos/seed/102/100/100",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial-emily-k",
+      "description": "Avatar for Emily K.",
+      "imageUrl": "https://picsum.photos/seed/103/100/100",
+      "imageHint": "woman professional"
+    }
+  ]
 }
