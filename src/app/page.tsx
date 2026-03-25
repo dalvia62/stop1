@@ -85,7 +85,7 @@ export default function Home() {
           </p>
           <div className="mt-10 flex justify-center">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-              <Link href="#how-it-works">Generate Letter</Link>
+              <Link href="/contact">Contact Us</Link>
             </Button>
           </div>
           <div className="mt-8 flex justify-center gap-x-6 gap-y-2 flex-wrap">
@@ -209,7 +209,7 @@ export default function Home() {
             <h2 className="text-3xl font-extrabold tracking-tight">Take Control of Your Financial Communication Today</h2>
             <div className="mt-8 flex justify-center">
                 <Button asChild size="lg" variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                    <Link href="#hero">Get Started</Link>
+                    <Link href="/contact">Contact Us</Link>
                 </Button>
             </div>
         </div>
