@@ -1,13 +1,5 @@
-"use client";
-
-import { useState, useEffect } from 'react';
-
 export default function PrivacyPage() {
-  const [lastUpdated, setLastUpdated] = useState('');
-
-  useEffect(() => {
-    setLastUpdated(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
-  }, []);
+  const lastUpdated = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
   return (
     <div className="bg-card">

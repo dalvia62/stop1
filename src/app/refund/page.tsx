@@ -1,14 +1,7 @@
-"use client";
-
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function RefundPage() {
-  const [lastUpdated, setLastUpdated] = useState('');
-
-  useEffect(() => {
-    setLastUpdated(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
-  }, []);
+  const lastUpdated = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
   return (
     <div className="bg-card">
