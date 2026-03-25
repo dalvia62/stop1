@@ -1,17 +1,20 @@
-import type { Metadata } from 'next';
+"use client";
 
-export const metadata: Metadata = {
-  title: 'Terms of Service | StopAndDesist',
-  description: 'The terms of service for using the StopAndDesist platform.',
-};
+import { useState, useEffect } from 'react';
 
 export default function TermsPage() {
+  const [lastUpdated, setLastUpdated] = useState('');
+
+  useEffect(() => {
+    setLastUpdated(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
+  }, []);
+  
   return (
     <div className="bg-card">
       <div className="container mx-auto max-w-4xl py-16 md:py-24 px-4">
         <h1 className="text-3xl font-bold tracking-tight md:text-4xl mb-6 text-primary">Terms of Service</h1>
         <div className="space-y-6 text-muted-foreground leading-relaxed">
-          <p><strong>Last Updated:</strong> {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          <p><strong>Last Updated:</strong> {lastUpdated}</p>
 
           <p>
             Please read these Terms of Service ("Terms") carefully before using the StopAndDesist website and services (the "Service") operated by us. Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms.

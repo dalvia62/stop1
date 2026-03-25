@@ -1,17 +1,20 @@
-import type { Metadata } from 'next';
+"use client";
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy | StopAndDesist',
-  description: 'Our privacy policy outlines how we handle your data at StopAndDesist.',
-};
+import { useState, useEffect } from 'react';
 
 export default function PrivacyPage() {
+  const [lastUpdated, setLastUpdated] = useState('');
+
+  useEffect(() => {
+    setLastUpdated(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
+  }, []);
+
   return (
     <div className="bg-card">
       <div className="container mx-auto max-w-4xl py-16 md:py-24 px-4">
         <h1 className="text-3xl font-bold tracking-tight md:text-4xl mb-6 text-primary">Privacy Policy</h1>
         <div className="space-y-6 text-muted-foreground leading-relaxed">
-          <p><strong>Last Updated:</strong> {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          <p><strong>Last Updated:</strong> {lastUpdated}</p>
 
           <p>
             Welcome to StopAndDesist. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our website and services.
