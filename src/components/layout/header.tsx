@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, Scale } from 'lucide-react';
+import { Menu, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
@@ -19,8 +19,8 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2" onClick={() => open && setOpen(false)}>
-          <Scale className="h-6 w-6 text-primary" />
-          <span className="font-bold sm:inline-block">StopAndDesist</span>
+          <Shield className="h-6 w-6 text-primary" />
+          <span className="font-bold sm:inline-block">Stop<span className="text-muted-foreground">And</span>Desist</span>
         </Link>
         <nav className="hidden gap-6 md:flex">
           {navLinks.map((link) => (
@@ -49,8 +49,8 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="left">
               <Link href="/" className="flex items-center mb-6" onClick={() => setOpen(false)}>
-                <Scale className="h-6 w-6 text-primary mr-2" />
-                <span className="font-bold">StopAndDesist</span>
+                <Shield className="h-6 w-6 text-primary mr-2" />
+                <span className="font-bold">Stop<span className="text-muted-foreground">And</span>Desist</span>
               </Link>
               <div className="grid gap-4">
                 {[...navLinks, { href: '/contact', label: 'Contact' }].map((link) => (
