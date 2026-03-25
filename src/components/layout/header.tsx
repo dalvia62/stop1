@@ -34,7 +34,7 @@ export function Header() {
           ))}
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-2 sm:space-x-4">
-          <Button asChild className="hidden sm:inline-flex" variant="ghost">
+          <Button asChild className="hidden sm:inline-flex">
             <Link href="/contact">Contact</Link>
           </Button>
           <Sheet open={open} onOpenChange={setOpen}>
