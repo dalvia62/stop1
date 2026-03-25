@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Shield } from 'lucide-react';
 
 const footerLinks = [
+  { href: '/pricing', label: 'Pricing' },
   { href: '/terms', label: 'Terms' },
   { href: '/privacy', label: 'Privacy' },
   { href: '/refund', label: 'Refund' },
